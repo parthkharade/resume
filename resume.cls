@@ -29,21 +29,21 @@
 {}{0em}
 {}
 
-\newcommand{\contactsep}{\hspace{5pt}$\diamond$\hspace{5pt}}
+\newcommand{\contactsep}{\hspace{5pt}\texorpdfstring{$\diamond$}{}\hspace{5pt}}
 
 \newcommand{\name}[1]{\begin{center} \Huge{#1} \end{center}\thispagestyle{empty}}
 
 \newcommand{\details}[3]{\begin{center}{#1}\contactsep{#2}\contactsep{#3}\end{center}}
 
-\newcommand{\education}[4]{\subsection{{$\diamond$\hspace{4pt}\textbf{#1}\hfill\emph{#2}}\\\hspace{9pt}{#3}\hfill{#4}}}
+\newcommand{\education}[4]{\subsection{{\texorpdfstring{$\diamond$}{}\hspace{4pt}\textbf{#1}\texorpdfstring{\hfill}{}\emph{#2}}\texorpdfstring{\\}{}\hspace{9pt}{#3}\texorpdfstring{\hfill}{}{#4}}}
 
-\newcommand{\project}[3]{$\diamond$\hspace{4pt}\textbf{#1}\hfill\emph{#2}\\\hspace*{8pt}\emph{#3}}
+\newcommand{\project}[3]{\texorpdfstring{$\diamond$}{}\hspace{4pt}\textbf{#1}\texorpdfstring{\hfill}{}\emph{#2}\texorpdfstring{\\}{}\hspace*{8pt}\emph{#3}}
 
 \newcommand{\workex}[3]{\begin{flushleft}
-  $\diamond$\hspace{4pt}\textbf{#1}\hfill\emph{#2}\\\hspace*{8pt}\emph{#3}\vspace*{-1em}
+  \texorpdfstring{$\diamond$}{}\hspace{4pt}\textbf{#1}\texorpdfstring{\hfill}{}\emph{#2}\texorpdfstring{\\}{}\hspace*{8pt}\emph{#3}\vspace*{-1em}
 \end{flushleft}}
 
-\newcommand{\extrac}[1]{$\diamond$\hspace{4pt}\textbf{#1}}
+\newcommand{\extrac}[1]{\texorpdfstring{$\diamond$}{}\hspace{4pt}\textbf{#1}}
 
-\newcommand{\publication}[4]{$\diamond$\hspace{4pt}#1#2#3#4}
+\newcommand{\publication}[4]{\texorpdfstring{$\diamond$}{}\hspace{4pt}#1#2#3#4}
 
