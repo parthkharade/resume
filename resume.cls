@@ -13,8 +13,8 @@
   letterpaper,
   left={15.4mm},
   right={15.4mm},
-  top={15.0mm},
-  bottom={15.0mm} 
+  top={10.0mm},
+  bottom={10.0mm} 
 }
 
 \titleformat{\section}         % Customise the \section command 
