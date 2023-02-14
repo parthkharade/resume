@@ -1,43 +1,46 @@
 % chktex-file 8
 \documentclass{resume}
 \usepackage[colorlinks=true,linkcolor=blue,anchorcolor=blue,citecolor=blue,filecolor=blue,menucolor=blue,runcolor=blue,urlcolor=blue]{hyperref}
-\geometry{a4paper, margin=0.35in}
+\geometry{a4paper, margin=1in}
 
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\name{Parth Kharade}
+\begin{center}\huge{Curriculum Vitae}\end{center}
+\vspace{-0.8cm}
+\name{\Large{Parth Kharade - \large{U-M ID: 05841408}}}
+\begin{center}{MS in Electical and Computer Engineering}\end{center}
 \vspace{-1.0em}
 \details{(+91) 9702553106}{\href{mailto:parthkharade99@gmail.com}{parthkharade99@gmail.com}}
 {\href{https://github.com/parthkharade}{github.com/parthkharade}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-0.8cm}
+\vspace{-0.5cm}
 \section{Education}
 \education{Birla Institute of Technology and Science Pilani - Pilani Campus}{August 2017- May 2021}{Electrical and Electronics Engineering}{CGPA:7.74}
-% \education{Smt Sulochanadevi Singhania School, Thane}{July 2015 - May 2017}{Indian School Certificate (ISC)}{95.00\%}
-% \education{Smt Sulochanadevi Singhania School, Thane}{July 2005 - May 2015}{Indian Certificate of Secondary Education (ICSE)}{94.86\%}
-\vspace{-0.25cm}
+\education{Smt Sulochanadevi Singhania School, Thane}{July 2015 - May 2017}{Indian School Certificate (ISC)}{95.00\%}
+\education{Smt Sulochanadevi Singhania School, Thane}{July 2005 - May 2015}{Indian Certificate of Secondary Education (ICSE)}{94.86\%}
+% \vspace{-0.25cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Work Experience}
 % ---------------------------------------------------------------------------------------%
 \workex{WCB Robotics}{July 2021 - Present}{Embedded Design Engineer}\vspace{0cm}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{0cm}
+\begin{itemize}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\vspace{0cm}
     \item \textbf{RF Tranceiver board for Radio controller of robot.}
-    \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.4em}
+    \begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
         \item[$\diamond$] 4-layer \textbf{impedence matched PCB design} for CC2592 RF frontend and CC2500 Tranceiver.
-        \item[$\diamond$] \textbf{Firmware development} to implement \textbf{FHSS} and \textbf{antenna diversity} on TMS320F280023 microcontroller.
+        \item[$\diamond$] \textbf{Firmware development} to implement \textbf{FHSS} on \textbf{TMS320F280023} microcontroller.
         \item[$\diamond$] Acheived a line-of-sight range of \textbf{850m at 20Kbps}. An \textbf{improvement of 200m} over the previous designs.
     \end{itemize}
-    \vspace{-0.1cm}
+    \vspace{0.3cm}
     \item \textbf{Lithium Ion Battery Charger}
-    \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.4em}
+    \begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
         \item[$\diamond$] Circuit design of in PSpice for TI with LM5175 4 switch synchronous buck-boost controller. 
         \item[$\diamond$] \textbf{4-layer power-pcb design} capable of carrying carry currents of upto \textbf{10A} and delivering a power of \textbf{200W}. An \textbf{improvement of 150W} over the C.O.T.S. charger we had.
         \item[$\diamond$] Firmware development to implement \textbf{CC-CV charging}, \textbf{battery balancing} and driver for SSD1306 based OLED display.
     \end{itemize}
-    \vspace{-0.1cm}
+    \vspace{0.3cm}
     \item \textbf{Diagnostic Data Logger}
-    \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.4em}
+    \begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
         \item[$\diamond$] \textbf{Ported FatFs for TMS570LS1224 microcontroller} to implement data-logging in the form of CSV files on a SDcard.
         \item[] 
     \end{itemize}
@@ -49,25 +52,26 @@
     \item Created an knowledge transfer platform for C2000 microcontrollers for easy on-boarding of new interns.
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-0.8cm}
+\section{Publications}
+\publication{\textbf{Parth Kharade} et al.;}{\textit{ Design  and  Implementation  of  the  Software  Architecture  and  Control  for the  Electrical  Power  Subsystem  of  a  3U  Hyperspectral  Imaging  CubeSat.}} { International Astronautical Congress-2020}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Projects}
 \project{Implementation of a MIPS pipelined datapath}{March 2020 - April 2020}{Computer Architecture}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+\begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
     \item Conceptualization and implementation of a \textbf{5-stage MIPS pipelined} processor in verilog.
     \item The pipeline was able to detect and remedy structural, control and data hazards for \emph{sub}, \emph{add}, \emph{or}, \emph{and} and \emph{beq} instructions.
 \end{itemize}
 \vspace{-0.1cm}
 % ---------------------------------------------------------------------------------------%               
 \project{Room cleaning BOT}{October 2019 - November 2019}{Embedded Systems Design}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+\begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
     \item Room cleaning bot which can navigate around a square room while vacuuming it.
     \item Interfaced sensors, rotary encoders and motor drivers with \textbf{STM32F407} micro-controller using register level code.
 \end{itemize}
 \vspace{-0.2cm}
 %---------------------------------------------------------------------------------------%
 \workex{Team Anant - Student Satellite Team}{March 2018 - August 2021}{Member and Lead - Electrical Power Subsystem}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{0cm}
+\begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}\vspace{0.1cm}
     \item Wrote firmware for implementing \textbf{Maximum power point tracking} on the \textbf{MSP430F5529}. {\href{https://github.com/parthkharade/MSP430F5529}{Link to Github}}
     \item Worked with the Structrual Subsystem to make an Antenna Deployment Module using a burn-wire mechanism.
     \item Developed and implemented a \textbf{flight plan} for the power-system microcontroller.
@@ -76,38 +80,37 @@
 %---------------------------------------------------------------------------------------%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-0.5cm}
-\section{Publications}
-\publication{\textbf{Parth Kharade} et al.;}{\textit{ Design  and  Implementation  of  the  Software  Architecture  and  Control  for the  Electrical  Power  Subsystem  of  a  3U  Hyperspectral  Imaging  CubeSat.}} { International Astronautical Congress-2020}
+% \vspace{-0.7cm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \newpage
-\vspace{-0.5cm}
+% \vspace{-0.5cm}
 \section{Courses and Skills}
 \vspace{-0.6cm}
 \begin{table}[!htb]
     \begin{tabular}{l|l}
     \textbf{Coursework}        &   Control Systems, \textbf{Embedded Systems}, Computer Architecture, Digital Design\\
                             % &   \\
-    \textbf{Software Tools}&   \textbf{Code Composer Studio}, STM32CubeIDE, Git., \textbf{EagleCad}, LTSpice, PSpice for TI\\
+    \textbf{Software Tools}&   \textbf{Code Composer Studio}, STM32CubeIDE, Git., \textbf{EagleCad}, LTSpice\\
                             % &   \\
     \textbf{Hardware Skills}    &   \textbf{Oscilloscpes}, Logic Analysers, Electronic Loads, \textbf{PCB design and assembly}\\
     \textbf{Languages}    &   Embedded C, Verilog, Python, \LaTeX.\\
     \end{tabular}
 \end{table}
-\vspace{-0.8cm}
+% \vspace{-0.8cm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Extracurriculars and Leadership}
 \workex{Joint-Secretary}{July 2020 - May 2021}{Ragamalika:The Club of Indian Classical Dance and Music}
-    \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{0cm}
+\begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
         \item Lead a group of 30 plus musicians and dancers in composing and performing musical dramas. 
     \end{itemize}
 \extrac{Music}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{0cm}
+\begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
     \item Proficient tabla player. I have been learning for the \textbf{past 14 and performing for the past 10 years.}
     \item Self-taught fingerstyle guitarist.
 \end{itemize}
 \extrac{Photography}
-    \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+\begin{itemize}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
         \item Amateur photographer. I enjoy landscape photography and am fascinated by astrophotography.
     \end{itemize}
 \end{document}
