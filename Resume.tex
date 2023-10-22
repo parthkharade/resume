@@ -1,72 +1,229 @@
-\documentclass{resume}
-\usepackage[colorlinks=true,linkcolor=blue,anchorcolor=blue,citecolor=blue,filecolor=blue,menucolor=blue,runcolor=blue,urlcolor=blue]{hyperref}
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{array}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\project}[3]{\texorpdfstring{$\diamond$}{}\hspace{4pt}\textbf{#1}\texorpdfstring{\hfill}{}\emph{#2}\texorpdfstring{\\}{}\hspace*{8pt}\emph{#3}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\name{Parth Kharade}
-\details{(+91) 9702553106}{\href{mailto:parthkharade99@gmail.com}{parthkharade99@gmail.com}}{\href{https://github.com/parthkharade}{github.com/parthkharade}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+    {\Huge \scshape Parth Kharade} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 303-725-7695 ~ \href{mailto:parthkharade99@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{parthkharade99@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/parth-k-081287184/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/parthkharade}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
+    \vspace{-8pt}
+\end{center}
 
+
+%-----------EDUCATION-----------
 \section{Education}
-\education{Birla Institute of Technology and Science Pilani - Pilani Campus}{August 2017-Present}{Electrical and Electronics Engineering}{CGPA : 7.69}
-\education{Smt Sulochanadevi Singhania School, Thane}{July 2015 - May 2017}{Indian School Certificate (ISC)}{95.00\%}
-
-\education{Smt Sulochanadevi Singhania School, Thane}{July 2005 - May 2015}{Indian Certificate of Secondary Education (ICSE)}{94.86\%}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Projects and Work Experience}
-\project{Implementation of a MIPS pipelined datapath}{March 2020 - April 2020}{Computer Architecture}
-    \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.5em}
-        \item Conceptualization and implementation of a 5-stage MIPS pipelined processor in verilog.
-        \item The pipeline was able to detect and remedy structural, control and data hazards for \emph{sub}, \emph{add}, \emph{or}, \emph{and} and \emph{beq} instructions.
-    \end{itemize}
-%---------------------------------------------------------------------------------------%
-\project{Room cleaning BOT}{October 2019 - November 2019}{Embedded Systems Design}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.5em}
-    \item Room cleaning bot which can navigate around a square room while vacuuming it.
-    \item Interfacing Ultrasonic sensors, rotary encoders and motor drivers with \textbf{STM32F407} micro-controller using register level code as well as the \textbf{Hardware Abstraction Library} from STM32.
-\end{itemize}
-%---------------------------------------------------------------------------------------%
-\workex{Team Anant - Student Satellite Team}{March 2018 - Present}{Member and Lead - Electrical Power Subsystem}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.5em}
-    \item Wrote \textbf{register level code} for implementing \textbf{I2C} and \textbf{SPI} protocols on the \textbf{MSP430F5529}.
-    \item Worked with the Structrual and Thermal Subsystem to make an Antenna Deployment Module.
-    \item Developed and implemented a \textbf{filght plan} for the power-system microcontroller.
-    \item As the Subsystem lead I undertook various administrative duties and trained new recruits in the basics of microcontroller programming.
-\end{itemize}
-
-%---------------------------------------------------------------------------------------%
-
-\workex{LOGIQ Labs - eShipz.com}{July 2020 - December 2020}{Intern}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.5em}
-    \item Analysed delivery data for vendors using pandas library.
-    \item Made a duty calculator API to estimate customs duty using Flask and python.
-    \item Worked on an order syncing API to sync orders between various e-commerce stores and the company's website.
-\end{itemize}
-
-\vspace{-0.5cm}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Publications}
-\publication{\textbf{Parth Kharade} et al.;}{\textit{ Design  and  Implementation  of  the  Software  Architecture  and  Control  for the  Electrical  Power  Subsystem  of  a  3U  Hyperspectral  Imaging  CubeSat.}} { International Astronautical Congress-2020}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Courses and Skills}
-\vspace{-0.5cm}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Colorado, Boulder}{Aug. 2023 -- Present}
+      {Master's in Embedded Systems Engineering}{City, State}
+    \resumeSubheading
+      {Birla Institute of Technology and Science, Pilani}{Aug. 2017 -- May 2021}
+      {Bachelor's in Electrical and Electronics}{City, State}
+  \resumeSubHeadingListEnd
+ \vspace{-8pt}
+ \section{Courses and Skills}
+ \vspace{-4mm}
 \begin{table}[!htb]
-    \begin{tabular}{l|l}
-    \textbf{Courses}        &   Embedded Systems, Computer Architecture, Digital Design, Microprocessors and Interfacing,   \\
-                            &   Digital VLSI Design.\\
-                            &   \\
-    \textbf{Software}       &   Code Composer Studio, STM32CubeIDE, Git.\\
-                            &   \\
-    \textbf{Programming}    &   Embedded C, Verilog, Python, \LaTeX, C++.\\
+    \begin{tabular}{ m{5.3cm} | m{14cm} } 
+     \textbf{Micro-controllers}&{\: STM32F411, NXP-KL25Z, MSP430 , Texas Instruments TMS320, AT89C2051} \\
+     \textbf{Development Tools}&{\: Code Composer Studio, STM32Cube IDE, MCU-Xpresso, EAGLE , Git, Make} \\
+     \textbf{Communication Protocols  }&{\: SPI, I2C, UART} \\
+     \textbf{Hardware and Lab Skills}&{\: Oscilloscopes, Logic Analyser, Soldering (SMD), Electronic Loads} \\
+     \textbf{Programming Languages}&{\: Embedded C, 8051 Assembly, Verilog, Python}
     \end{tabular}
 \end{table}
-\vspace{-0.5cm}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Extracurriculars}
-\extrac{Music}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.5em}
-    \item Trained tabla player. I have been learning and playing tabla for the past 13 years.
-    \item Member of Ragamalika - The Classical Music and Dance Club of BITS Pilani 
+ \vspace{-8pt}
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%     %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {WCB Robotics Pvt Ltd}{July 2021 -- May 2023}
+      {Embedded Design Engineer}{Hyderabad, India}
+      \begin{itemize}[leftmargin=0.1in]
+        \item \textbf{RF Transceiver board for Radio controller of robot.}
+            \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
+                \item[$\diamond$] 4-layer \textbf{impedence matched PCB design} for CC2592 RF frontend and CC2500 Tranceiver.
+                \item[$\diamond$] Wrote an abstraction layer to interface the CC2500 transceiver with the TMS320F280023 micro-controller.
+                \item[$\diamond$] \textbf{Firmware development} to implement \textbf{FHSS} and \textbf{antenna diversity}.
+                \item[$\diamond$] Acheived a line-of-sight range of \textbf{850m at 20Kbps} which was an \textbf{improvement of 200m} over the previous designs.
+            \end{itemize}
+    \vspace{-0.1cm}
+        \item \textbf{Lithium Ion Battery Charger}
+            \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
+                \item[$\diamond$] Circuit design of LT3763 buck converter in LTSpice. 
+                \item[$\diamond$] \textbf{4-layer power-pcb design} capable of carrying carry currents of upto \textbf{10A} and delivering a power of \textbf{250W}. An \textbf{improvement of 200W} over the C.O.T.S. charger we had.
+                \item[$\diamond$] Firmware development to implement, \textbf{battery balancing} and display driver for SSD1306 based OLED display.
+        \end{itemize}
+    \vspace{-0.1cm}
+        \item \textbf{Pressure and Orientation Sensor Board}
+            \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
+                \item[$\diamond$] Designed a small form-factor 2-layer sensor board (3.5cm X 3.5cm) to measure the robot's suction cup pressure and orientation. Both these parameters are critical to the functioning of the robot,
+                \item[$\diamond$] Wrote fault-tolerant code to interface Bosch's BNO055 IMU and BMP388 with the TMS320 micro-controller.
+                \item[$\diamond$] Firmware development to interface THVD1450-RS485 transceiver with the TMS320 microcontroller.
+            \end{itemize} 
+        \item \textbf{Housekeeping Data-Logging System}
+            \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
+                \item[$\diamond$] Interfaced Winbond W25N NAND Flash memory with TMS570LS1224 micro-controller using SPI.
+                \item[$\diamond$] Wrote API's to provide a user-friendly interface to log and retrieve data.
+                \item[$\diamond$] \textbf{Ported FatFs for TMS570LS1224 microcontroller} to implement data-logging in the form of CSV files on a SDcard.
+            \end{itemize}           
 \end{itemize}
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \project{Team Anant - Student Satellite Team}{March 2018 - August 2021}{Member and Lead - Electrical Power Subsystem}
+        \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+            \item Wrote firmware for implementing \textbf{Maximum power point tracking} on the \textbf{MSP430F5529}. {\href{https://github.com/parthkharade/MSP430F5529}{\{Github\}}}
+            \item Developed and implemented a \textbf{flight plan} for the power-system microcontroller.
+        \end{itemize}
+    \project{Implementation of a MIPS pipelined datapath}{March 2020 - April 2020}{Computer Architecture - BITS Pilani}
+        \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+            \item Conceptualization and implementation of a \textbf{5-stage MIPS pipelined} processor in verilog.
+            \item The pipeline was able to detect and remedy structural, control, and data hazards for \emph{sub}, \emph{add}, \emph{or}, \emph{and} and \emph{beq} instructions.
+        \end{itemize}
+    \vspace{-0.2cm}
+    \vspace{-15pt}
+
+
+%
+
+
+
+%-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%             \resumeItemListStart
+%                 \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                 \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                 \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+
 \end{document}
