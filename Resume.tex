@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -69,22 +69,29 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+       {\large \textbf{#1}} &  {\large #2} \\
+      \textbf{#3} & { #4} \\
+    \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubheadingP}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+       \textbf{{\large #1}} &  {#2} \\
+    \end{tabular*}\vspace{-1pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\small#1} & \textit{ #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+      \small#1 &  {\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -97,11 +104,7 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-\newcommand{\project}[3]{\texorpdfstring{$\diamond$}{}\hspace{4pt}\textbf{#1}\texorpdfstring{\hfill}{}\emph{#2}\texorpdfstring{\\}{}\hspace*{8pt}\emph{#3}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newcommand{\project}[3]{\texorpdfstring{$\bullet$}{}\hspace{4pt} {#1}\texorpdfstring{\hfill}{}\emph{#2}\texorpdfstring{\\}{}\hspace*{8pt}\emph{#3}}
 
 \begin{document}
 
@@ -109,8 +112,7 @@
     {\Huge \scshape Parth Kharade} \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ 303-725-7695 ~ \href{mailto:parthkharade99@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{parthkharade99@gmail.com}} ~ 
     \href{https://www.linkedin.com/in/parth-k-081287184/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/parthkharade}}  ~
-    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/username}}
-    \vspace{-8pt}
+    \vspace{-16pt}
 \end{center}
 
 
@@ -118,112 +120,82 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Colorado, Boulder}{Aug. 2023 -- Present}
-      {Master's in Embedded Systems Engineering}{City, State}
+      {University of Colorado, Boulder}{August 2023 - May 2025}
+      {Master's in Embedded Systems Engineering}{4.00/4.00}
     \resumeSubheading
-      {Birla Institute of Technology and Science, Pilani}{Aug. 2017 -- May 2021}
-      {Bachelor's in Electrical and Electronics}{City, State}
+      {Birla Institute of Technology and Science, Pilani}{August 2017 - May 2021}
+      {Bachelor's in Electrical and Electronics}{7.85/10.0}
   \resumeSubHeadingListEnd
- \vspace{-8pt}
- \section{Courses and Skills}
+ \vspace{-16pt}
+ \section{Skills}
  \vspace{-4mm}
 \begin{table}[!htb]
-    \begin{tabular}{ m{5.3cm} | m{14cm} } 
-     \textbf{Micro-controllers}&{\: STM32F411, NXP-KL25Z, MSP430 , Texas Instruments TMS320, AT89C2051} \\
-     \textbf{Development Tools}&{\: Code Composer Studio, STM32Cube IDE, MCU-Xpresso, EAGLE , Git, Make} \\
-     \textbf{Communication Protocols  }&{\: SPI, I2C, UART} \\
-     \textbf{Hardware and Lab Skills}&{\: Oscilloscopes, Logic Analyser, Soldering (SMD), Electronic Loads} \\
-     \textbf{Programming Languages}&{\: Embedded C, 8051 Assembly, Verilog, Python}
+    \begin{tabular}{ m{3.1cm} | m{16cm} } 
+      {Micro-controllers}&{\: STM32 (Cortex-M4F), NXP(Cortex-M0+), MSP430, TMS320, 8051, Atmel} \\
+      {Firmware}&{\: C, 8051 Assembly, Python, SPI, UART, I2C, SDCC, Make, Git, FatFs} \\
+      {Hardware}&{\: Layout and Schematic Capture, Circuit Design, EAGLE, LTPSICE} \\
+      {Lab Skills}&{\: Oscilloscopes, Logic Analyser, Soldering (SMD), Electronic Load, Function Generator} \\
     \end{tabular}
 \end{table}
- \vspace{-8pt}
+ \vspace{-16pt}
 % %------RELEVANT COURSEWORK-------
-% \section{Relevant Coursework}
-%     %\resumeSubHeadingListStart
-%         \begin{multicols}{4}
-%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
-%                 \item\small Data Structures
-%                 \item Software Methodology
-%                 \item Algorithms Analysis
-%                 \item Database Management
-%                 \item Artificial Intelligence
-%                 \item Internet Technology
-%                 \item Systems Programming
-%                 \item Computer Architecture
-%             \end{itemize}
-%         \end{multicols}
-%     %\resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------
 \section{Experience}
+\vspace{5pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {WCB Robotics Pvt Ltd}{July 2021 -- May 2023}
-      {Embedded Design Engineer}{Hyderabad, India}
-      \begin{itemize}[leftmargin=0.1in]
-        \item \textbf{RF Transceiver board for Radio controller of robot.}
+      {WCB Robotics Pvt Ltd}{Hyderabad, India}{}{}
+      \vspace{-1.2cm}
+     \resumeSubheading
+      {}{}{\underline{Design Engineer}}{July 2022 -- May 2023}
+      \begin{itemize}[leftmargin=0.01in]
+        \item[]  \textbf{RF Transceiver board for Radio controller of robot}
             \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
-                \item[$\diamond$] 4-layer \textbf{impedence matched PCB design} for CC2592 RF frontend and CC2500 Tranceiver.
-                \item[$\diamond$] Wrote an abstraction layer to interface the CC2500 transceiver with the TMS320F280023 micro-controller.
-                \item[$\diamond$] \textbf{Firmware development} to implement \textbf{FHSS} and \textbf{antenna diversity}.
-                \item[$\diamond$] Acheived a line-of-sight range of \textbf{850m at 20Kbps} which was an \textbf{improvement of 200m} over the previous designs.
+                \item[$\bullet$]  Designed and implemented a high-range wireless transceiver with an impedance-matched PCB for a facade cleaning robot, achieving a line of sight range of 850 meters and reliable communication on high-rise buildings.
+                \item[$\bullet$] Designed and implemented a custom SPI driver for the CC2500 transceiver, offering an abstraction layer that simplified access to core functionality.
+                \item[$\bullet$] Enhanced noise immunity of the system by implementing FHSS and antenna diversity in firmware.
             \end{itemize}
-    \vspace{-0.1cm}
-        \item \textbf{Lithium Ion Battery Charger}
+            \vspace{-0.1cm}
+        \item[]  \textbf{Lithium Ion Battery Charger}
             \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
-                \item[$\diamond$] Circuit design of LT3763 buck converter in LTSpice. 
-                \item[$\diamond$] \textbf{4-layer power-pcb design} capable of carrying carry currents of upto \textbf{10A} and delivering a power of \textbf{250W}. An \textbf{improvement of 200W} over the C.O.T.S. charger we had.
-                \item[$\diamond$] Firmware development to implement, \textbf{battery balancing} and display driver for SSD1306 based OLED display.
+                \item[$\bullet$] Designed a compact Lithium Ion battery charger system by integrating a 4-layer PCB with the battery pack, allowing in-device charging without unplugging, while effectively managing thermal constraints. 
+                \item[$\bullet$] Attained 250W/10A high-power charging using LT3763 IC, enabling a 21Ah battery to charged in 2.5 hours.
+            \end{itemize}
+            \vspace{-0.1cm}
         \end{itemize}
-    \vspace{-0.1cm}
-        \item \textbf{Pressure and Orientation Sensor Board}
+        \vspace{-0.6cm}
+        \resumeSubheading
+        {}{}{\underline{Associate Design Engineer}}{July 2021 -- June 2022}
+        \begin{itemize}[leftmargin=0.02in]
+        \item[]  \textbf{Pressure and Orientation Sensor Board}
             \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
-                \item[$\diamond$] Designed a small form-factor 2-layer sensor board (3.5cm X 3.5cm) to measure the robot's suction cup pressure and orientation. Both these parameters are critical to the functioning of the robot,
-                \item[$\diamond$] Wrote fault-tolerant code to interface Bosch's BNO055 IMU and BMP388 with the TMS320 micro-controller.
-                \item[$\diamond$] Firmware development to interface THVD1450-RS485 transceiver with the TMS320 microcontroller.
-            \end{itemize} 
-        \item \textbf{Housekeeping Data-Logging System}
+                \item[$\bullet$] Designed a small form-factor(3cm x 3cm) sensor board for a glass building maintenance robot, vital for maintaining secure suction and precise orientation on vertical surfaces.
+                \item[$\bullet$] Developed a two-PCB arrangement for differential pressure sensing, incorporating BMP388 pressure sensors on a rigid PCB(atmospheric pressure) and a 4cm Flex PCB(suction cup pressure).
+                \item[$\bullet$] Wrote a fault-tolerant I2C driver for the sensors to detect sensor timeouts and report errors for timely remedial actions in the critical closed-loop control system, ensuring safe and reliable robot operation.
+            \end{itemize}
+        \item[]  \textbf{Data-Logging System for Housekeeping}
             \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
-                \item[$\diamond$] Interfaced Winbond W25N NAND Flash memory with TMS570LS1224 micro-controller using SPI.
-                \item[$\diamond$] Wrote API's to provide a user-friendly interface to log and retrieve data.
-                \item[$\diamond$] \textbf{Ported FatFs for TMS570LS1224 microcontroller} to implement data-logging in the form of CSV files on a SDcard.
+                \item[$\bullet$] Interfaced a Winbond W25N NAND Flash memory with the TMS570 microcontroller via SPI and developed user-friendly APIs for efficient data storage and retrieval, enhancing data-logging capabilities.
+                \item[$\bullet$] Wrote a Python script for interpreting and processing retrieved data, improving data analysis and usability.
+                \item[$\bullet$] Later enhanced the project by implementing FatFS for TMS570, enabling the use of an SD Card for improved data storage and access in the form of CSV files.
             \end{itemize}           
-\end{itemize}
-  \resumeSubHeadingListEnd
+    \end{itemize}
+    \resumeSubHeadingListEnd
 \vspace{-16pt}
-
-%-----------PROJECTS-----------
 \section{Projects}
-    \project{Team Anant - Student Satellite Team}{March 2018 - August 2021}{Member and Lead - Electrical Power Subsystem}
-        \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-            \item Wrote firmware for implementing \textbf{Maximum power point tracking} on the \textbf{MSP430F5529}. {\href{https://github.com/parthkharade/MSP430F5529}{\{Github\}}}
-            \item Developed and implemented a \textbf{flight plan} for the power-system microcontroller.
+  \resumeSubHeadingListStart
+    \resumeSubheadingP
+    {Atmel AT89C2051 Board bring-up}{August 2023 - November 2023}
+    \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+            \item[$\bullet$] Interfaced a '373 latch, NVSRAM with AT89C51R2 to demonstrate program execution from external memory.
+            \item[$\bullet$] Set up a toolchain using SDCC, make and batchisp to compile, link and flash C programs.      
         \end{itemize}
-    \project{Implementation of a MIPS pipelined datapath}{March 2020 - April 2020}{Computer Architecture - BITS Pilani}
-        \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-            \item Conceptualization and implementation of a \textbf{5-stage MIPS pipelined} processor in verilog.
-            \item The pipeline was able to detect and remedy structural, control, and data hazards for \emph{sub}, \emph{add}, \emph{or}, \emph{and} and \emph{beq} instructions.
+    \resumeSubheadingP
+    {Electrical Power Subsystem of a Cube-Sat}{March 2018 - August 2021}
+    \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+            \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430F5529 micro-controller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.{\href{https://github.com/parthkharade/MSP430F5529}{\{Github\}}}
         \end{itemize}
-    \vspace{-0.2cm}
-    \vspace{-15pt}
-
-
-%
-
-
-
-%-----------INVOLVEMENT---------------
-% \section{Leadership / Extracurricular}
-%     \resumeSubHeadingListStart
-%         \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
-%             \resumeItemListStart
-%                 \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
-%                 \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
-%                 \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
-%             \resumeItemListEnd
-        
-%     \resumeSubHeadingListEnd
-
-
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
 \end{document}
