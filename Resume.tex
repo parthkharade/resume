@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Jake Gutierrez
+% Author : Jake Gutierrez,Parth Kharade
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 %------------------------
@@ -83,14 +83,14 @@
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{ #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 &  {\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
@@ -122,12 +122,13 @@
     \resumeSubheading
       {University of Colorado, Boulder}{August 2023 - May 2025}
       {Master's in Embedded Systems Engineering}{4.00/4.00}
+      \vspace{-0.1in}
     \resumeSubheading
       {Birla Institute of Technology and Science, Pilani}{August 2017 - May 2021}
       {Bachelor's in Electrical and Electronics}{7.85/10.0}
   \resumeSubHeadingListEnd
  \vspace{-16pt}
- \section{Skills}
+ \section{Skills and Coursework}
  \vspace{-4mm}
 \begin{table}[!htb]
     \begin{tabular}{ m{3.1cm} | m{16cm} } 
@@ -135,6 +136,8 @@
       {Firmware}&{\: C, 8051 Assembly,Python, SPI, UART, I2C, SDCC, Make, Git} \\
       {Hardware}&{\: Layout and Schematic Capture, Circuit Design, EAGLE, LTPSICE} \\
       {Lab Skills}&{\: Oscilloscopes, Logic Analyser, Soldering (SMD), Electronic Load, Function Generator} \\
+      {Coursework}&{\: Embedded System Design, Real-Time Embedded Systems*, Embedded Linux Development*} \\
+      % {}&{\: Development}
     \end{tabular}
 \end{table}
  \vspace{-16pt}
@@ -145,29 +148,33 @@
 \vspace{5pt}
   \resumeSubHeadingListStart
     \resumeSubheading
+    {University of Colorado Boulder}{Boulder, Colorado}{Graduate Teaching Assistant - Embedded Systems Design }{January 2024 - Present}
+    \vspace{-0.3cm} 
+    \begin{itemize}[leftmargin=0.3in]\vspace{-0.3em}
+      \item[$\bullet$] I support student learning by conducting weekly office hours, administering lab vivas, grading assignments, and assisting the professor in managing lab equipment and online lectures.
+    \end{itemize}
+    \resumeSubheading
       {WCB Robotics Pvt Ltd}{Hyderabad, India}{Design Engineer}{July 2021 - May 2023}
       \vspace{-0.3cm}
       \begin{itemize}[leftmargin=0.01in]
         \item[]  \textbf{RF Transceiver board for Radio controller of robot}
             \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
                 \item[$\bullet$]  Designed and implemented a high-range wireless transceiver with an impedance-matched PCB for a facade cleaning robot, achieving a line of sight range of 850 meters and reliable communication on high-rise buildings.
-                \item[$\bullet$] Implemented a custom SPI driver for the CC2500 transceiver, offering an abstraction layer that simplified access to core functionality. Furthermore 
-                \item[$\bullet$] Enhanced noise immunity of the system by implementing FHSS and antenna diversity in firmware.
+                \item[$\bullet$] Implemented a  SPI driver for the CC2500 transceiver that simplified access to core functionality. Enhanced noise immunity of the system by implementing FHSS and antenna diversity in firmware.
             \end{itemize}
         \item[]  \textbf{Lithium Ion Battery Charger}
             \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
-                \item[$\bullet$] Designed a compact Lithium Ion battery charger system by integrating a 4-layer PCB with the battery pack, allowing in-device charging without unplugging, while effectively managing thermal constraints. 
+                \item[$\bullet$] Designed a compact Li-ion battery charger system by integrating a 4-layer PCB with the battery pack, allowing in-device charging without unplugging, while effectively managing thermal constraints. 
                 \item[$\bullet$] Attained 250W/10A high-power charging using LT3763 IC, enabling a 21Ah battery to charged in 2.5 hours.
             \end{itemize}
         \item[]  \textbf{Pressure and Orientation Sensor Board}
             \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
-                \item[$\bullet$] Designed a small form-factor(3cm x 3cm) sensor board for a glass building maintenance robot, vital for maintaining secure suction and precise orientation on vertical surfaces.
-                \item[$\bullet$] Developed a two-PCB arrangement for differential pressure sensing, incorporating BMP388 pressure sensors on a rigid PCB(atmospheric pressure) and a 4cm Flex PCB(suction cup pressure).
+                \item[$\bullet$] Developed a two-PCB (rigid +flex) arrangement for orientation and differential pressure sensing, with BMP388 and BNO055 sensors. This was vital for maintaining secure suction and precise orientation on vertical surfaces.
                 \item[$\bullet$] Wrote a fault-tolerant I2C driver for the sensors to detect sensor timeouts and report errors for timely remedial actions in the critical closed-loop control system, ensuring safe and reliable robot operation.
             \end{itemize}
         \item[]  \textbf{Data-Logging System for Housekeeping}
             \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
-                \item[$\bullet$] Interfaced a Winbond W25N NAND Flash memory with the TMS570 microcontroller via SPI and developed user-friendly APIs for efficient data storage and retrieval, enhancing data-logging capabilities.
+                \item[$\bullet$] Interfaced a Winbond W25N NAND-Flash memory with a TMS570 microcontroller via SPI and developed user-friendly APIs for efficient data storage and retrieval, enhancing data-logging capabilities.
                 \item[$\bullet$] Wrote a Python script for interpreting and processing retrieved data, improving data analysis and usability.
                 %\item[$\bullet$] Later enhanced the project by implementing FatFS for TMS570, enabling the use of an SD Card for improved data storage and access in the form of CSV files.
             \end{itemize}           
@@ -177,21 +184,23 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubheadingP
-    {E-Ink Desk Clock}{November 2023 - December 2023}
+    {E-Paper Display Based Desk Clock \href{https://github.com/parthkharade/Eink-DeskClock}{\{Github\}}}{November 2023 - December 2023}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-            \item[$\bullet$] Wrote a graphics library to display text and images on a Waveshare 4.2 Inch E-Ink Display.
-            \item[$\bullet$] Designed a PCB and implemeted firmware for a a clock with user configurable alarms.      
+            \item[$\bullet$] Developed a custom graphics library to allow the user to render bitmapped text and images on the display.
+            \item[$\bullet$] Implemeneted the Model-View-Controller design pattern using a state machine to allow the user to interact with the clock.
         \end{itemize}
     \resumeSubheadingP
-    {Atmel AT89C2051 Board bring-up}{August 2023 - November 2023}
+    % {Atmel AT89C51RC2 Board bring-up \href{https://github.com/parthkharade/Eink-DeskClock}{\{Photos\}}}{August 2023 - November 2023}
+    {Atmel AT89C51RC2 Board bring-up}{August 2023 - November 2023}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-            \item[$\bullet$] Interfaced a '373 latch, NVSRAM with AT89C51R2 to demonstrate program execution from external memory.
-            \item[$\bullet$] Set up a toolchain using SDCC, make and batchisp to compile, link and flash C programs.      
+            \item[$\bullet$] Interfaced a '373 latch NVSRAM with AT89C51R2 to demonstrate program execution from external memory.
+            % \item[$\bullet$] Set up a toolchain using SDCC, make and batchisp to compile, link and flash C programs.      
+            \item[$\bullet$] Implemented a bit banged I2C interface between an EEPROM and the AT89C51R2 microcontroller.
         \end{itemize}
     \resumeSubheadingP
-    {Electrical Power Subsystem of a Cube-Sat}{March 2018 - August 2021}
+    {Electrical Power Subsystem of a Cube-Sat \href{https://github.com/parthkharade/MSP430F5529}{\{Github\}}}{March 2018 - August 2021}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-            \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430F5529 micro-controller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.{\href{https://github.com/parthkharade/MSP430F5529}{\{Github\}}}
+            \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430F5529 microcontroller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.
         \end{itemize}
     \resumeSubHeadingListEnd
 \vspace{-16pt}
