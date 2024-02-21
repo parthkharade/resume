@@ -1,11 +1,11 @@
-%-------------------------
+\documentclass[11pt]{article}
 % Resume in Latex
 % Author : Jake Gutierrez,Parth Kharade
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
-%------------------------
 
-\documentclass[a4,11pt]{article}
+% chktex-file 8
+% chktex-file 1
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -40,14 +40,12 @@
 
 \urlstyle{same}
 
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
+\raggedbottom\raggedright\setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -56,28 +54,28 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1\vspace{-2pt}}
   }
 }
 
 \newcommand{\classesList}[4]{
     \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
+        {#1 #2 #3 #4\vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-       {\large \textbf{#1}} &  {\large #2} \\
-      \textbf{#3} & { #4} \\
+       {\large \textbf{#1}}&{\large #2} \\
+      \textbf{#3}&{ #4} \\
     \end{tabular*}\vspace{-1pt}
 }
 
 \newcommand{\resumeSubheadingP}[2]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-       \textbf{{\large #1}} &  {#2} \\
+       \textbf{{\large #1}}&{#2} \\
     \end{tabular*}\vspace{-1pt}
 }
 
@@ -107,17 +105,16 @@
 \newcommand{\project}[3]{\texorpdfstring{$\bullet$}{}\hspace{4pt} {#1}\texorpdfstring{\hfill}{}\emph{#2}\texorpdfstring{\\}{}\hspace*{8pt}\emph{#3}}
 
 \begin{document}
-
+\setlength{\footskip}{4.1pt}
 \begin{center}
     {\Huge \scshape Parth Kharade} \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 303-725-7695 ~ \href{mailto:parthkharade99@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{parthkharade99@gmail.com}} ~ 
-    \href{https://www.linkedin.com/in/parth-k-081287184/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/parthkharade}}  ~
-    \vspace{-16pt}
+    \small \raisebox{-0.1\height}\faPhone\ 303-725-7695{\hspace{0.1cm}}~\href{mailto:parthkharade99@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{parthkharade99@gmail.com}}~{\hspace{0.1cm}}\href{https://www.linkedin.com/in/parth-k-081287184/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/parthkharade}}
+    \vspace{-10pt}
 \end{center}
 
 
 %-----------EDUCATION-----------
-\section{Education}
+\section {Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Colorado, Boulder}{August 2023 - May 2025}
@@ -131,8 +128,8 @@
  \section{Skills and Coursework}
  \vspace{-4mm}
 \begin{table}[!htb]
-    \begin{tabular}{ m{3.1cm} | m{16cm} } 
-      {Micro-controllers}&{\: STM32 (Cortex-M4F), NXP(Cortex-M0+), MSP430, TMS320, 8051, Atmel} \\
+    \begin{tabular} { m{3.1cm} | m{16cm} } 
+      {Micro-controllers}&{\: STM32 (Cortex-M4F), NXP (Cortex-M0+), MSP430, TMS320, 8051, Atmel} \\
       {Firmware}&{\: C, 8051 Assembly,Python, SPI, UART, I2C, SDCC, Make, Git} \\
       {Hardware}&{\: Layout and Schematic Capture, Circuit Design, EAGLE, LTSpice} \\
       {Lab Skills}&{\: Oscilloscopes, Logic Analyser, Soldering (SMD), Electronic Load, Function Generator} \\
@@ -184,13 +181,13 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubheadingP
-    {E-Paper Display Based Desk Clock \href{https://github.com/parthkharade/Eink-DeskClock}{\small{\{Github\}}}}{November 2023 - December 2023}
+    {E-Paper Display Based Desk Clock \href{https://github.com/parthkharade/Eink-DeskClock}{\small{\textbar{ }\underline{Link} }}}{November 2023 - December 2023}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-            \item[$\bullet$] Developed a custom graphics library to allow the user to render bit mapped text and images on the display.
+            \item[$\bullet$] Developed a custom graphics library  to allow the user to render bit mapped text and images on the display.
             \item[$\bullet$] Implemented the Model-View-Controller design pattern using a state machine to allow the user to interact with the clock.
         \end{itemize}
     \resumeSubheadingP
-    {Atmel AT89C51RC2 Board bring-up \href{https://drive.google.com/drive/folders/1rbtfpOdMc_ohnfu15VS3bPxNDx-BoWwA?usp=drive_link}{\small{\{Photos\}}}}{August 2023 - November 2023}
+    {Atmel AT89C51RC2 Board bring-up \href{https://drive.google.com/drive/folders/1rbtfpOdMc_ohnfu15VS3bPxNDx-BoWwA?usp=drive_link}{\small{\textbar{ }\underline{Link}}}}{August 2023 - November 2023}
     % {Atmel AT89C51RC2 Board bring-up}{August 2023 - November 2023}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
             \item[$\bullet$] Interfaced a '373 latch NVSRAM with AT89C51R2 to demonstrate program execution from external memory.
@@ -198,7 +195,7 @@
             \item[$\bullet$] Implemented a bit banged I2C interface between an EEPROM and the AT89C51R2 microcontroller.
         \end{itemize}
     \resumeSubheadingP
-    {Electrical Power Subsystem of a Cube-Sat \href{https://github.com/parthkharade/MSP430F5529}{\small{\{Github\}}}}{March 2018 - August 2021}
+    {Electrical Power Subsystem of a Cube-Sat \href{https://github.com/parthkharade/MSP430F5529}{\small{\textbar{ }\underline{Link} }}}{March 2018 - August 2021}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
             \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430F5529 microcontroller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.
         \end{itemize}
