@@ -35,7 +35,7 @@
 
 \newcommand{\details}[3]{\begin{center}{#1}\contactsep{#2}\contactsep{#3}\end{center}}
 
-\newcommand{\education}[4]{\subsection{{\texorpdfstring{$\diamond$}{}\hspace{4pt}\textbf{#1}\texorpdfstring{\hfill}{}\emph{#2}}\texorpdfstring{\\}{}\hspace{9pt}{#3}\texorpdfstring{\hfill}{}{#4}}}
+\newcommand{\education}[4]{\subsection{{\texorpdfstring{$\diamond$}{}\hspace{4pt}{#1}\texorpdfstring{\hfill}{}{#2}}\texorpdfstring{\\}{}\hspace{9pt}{#3}\texorpdfstring{\hfill}{}{#4}}}
 
 \newcommand{\project}[3]{\texorpdfstring{$\diamond$}{}\hspace{4pt}\textbf{#1}\texorpdfstring{\hfill}{}\emph{#2}\texorpdfstring{\\}{}\hspace*{8pt}\emph{#3}}
 
