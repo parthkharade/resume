@@ -40,7 +40,7 @@
 \newcommand{\resumeSubheading}[3]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      {\large \textbf{#1} \textbar{} #2}&{\large #3} \\
+      {\large \textbf{#1} \textbar{} \emph{#2}}&{\large #3} \\
     \end{tabular*}\vspace{-10pt}
 }
 
@@ -70,12 +70,12 @@
 \section {Education}
 \resumeSubHeadingListStart
 \resumeSubheadingEdu
-{University of Colorado Boulder}{August 2023 - May 2025}
-{Master's in Embedded Systems Engineering}{3.72/4.00}
+{University of Colorado Boulder}{May 2025}
+{Master's in Embedded Systems Engineering}{3.8/4.0}
 \vspace{-0.1in}
 \resumeSubheadingEdu
-{Birla Institute of Technology and Science, Pilani}{August 2017 - May 2021}
-{Bachelor's in Electrical and Electronics Engineering}{7.85/10.0}
+{Birla Institute of Technology and Science, Pilani}{May 2021}
+{Bachelor's in Electrical and Electronics Engineering}{7.9/10.0}
 \resumeSubHeadingListEnd
 \vspace{-16pt}
 \section{Skills and Coursework}
@@ -83,14 +83,12 @@
 \begin{table}[!htb]
   \begin{tabular} { m{3.1cm} | m{15cm} }
     % {Micro-controllers}   & {\: STM32 (Arm Cortex-M4F), NXP (Arm Cortex-M0+), TI-MSP, TI-C2000, 8051}                  \\
-    { Languages }         & {\: C, C++, 8051 Assembly, Python, Verilog, VHDL}               \\
-    {Tools}               & {\: Make, Bazel, Git, GTest, ProtoBuf, Quartus Prime}               \\
-    {Peripherals}         & {\: GPIO, SPI, UART, I2C, ADC, DAC, DMA, Timers}                                          \\
+    {Languages}           & {\: C, 8051 Assembly, Python, Verilog, VHDL, Bash}        \\
+    {Tools/Software}      & {\: Make, Bazel, Git, GTest, Modelsim, Quartus}               \\
+    {Peripherals}         & {\: GPIO, SPI, UART, I2C, ADC, DAC, DMA, BLE}                                          \\
     % {Hardware}          & {\: Layout and Schematic Capture, Circuit Design, EAGLE, LTSpice}                        \\
-    {Hardware Skills}          & {\: Oscilloscopes, Logic Analyser, Soldering (SMD), Electronic Load, Function Generator} \\
-    {Coursework}          & {\: IoT Embedded Firmware, Embedded Linux Design, Programmable Logic Design}                \\
-    {}                    & {\: Real-Time Embedded Systems, Embedded Systems Design}
-    % {}&{\: Development}
+    {Hardware Skills}     & {\: PCB Design, Oscilloscopes, Logic Analyser, Soldering (SMD)}\\
+    {Coursework}          & {\: Programmable Logic Design, Embedded Linux Design, Real-Time Embedded Systems}                \\
   \end{tabular}
 \end{table}
 \vspace{-16pt}
@@ -98,106 +96,133 @@
 \section{Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Carbon3D}{Software Engineering Intern}{May 2024 - August 2024}
+{Carbon3D}{Software Engineering Intern}{May 2024 - Aug 2024}
 \vspace{-0.3cm}
 \begin{itemize}[leftmargin=0.3in]\vspace{-0.3em}\setlength{\itemsep}{0pt}
-  \item[$\bullet$]Wrote application level code and tests in GoogleTest to make the internal state-machines of the printer more robust. This completely eliminated unexpected state-transitions and random behaviour. 
+  \item[$\bullet$]Optimized internal state machines for Carbon3D printers by developing rigorous GoogleTest cases and improving application code, eliminating unintended state transitions and improving system stability.
   \item[$\bullet$] Built a firmware update manager in Python to provide a consistent interface for managing printer firmware. 
 \end{itemize}
+\vspace{-0.2cm}
 %---------------------------------------------------------------------%
 \resumeSubheading
-{WCB Robotics Pvt Ltd}{Design Engineer}{July 2021 - May 2023}
+{WCB Robotics Pvt Ltd}{Design Engineer}{Jul 2021 - May 2023}
 \vspace{-0.4cm}
-\begin{itemize}[leftmargin=0.01in]\setlength\itemsep{-5pt}
-  \item[]  \textbf{RF Transceiver}
+\begin{itemize}[leftmargin=0.01in]\setlength\itemsep{-3pt}
+  \item[]  \textbf{\emph{RF Transceiver}}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
       \item[$\bullet$] Built a SPI driver for the CC2500 transceiver that simplified access to core functionality. Enhanced noise immunity of the system by implementing FHSS and antenna diversity in firmware.
       \item[$\bullet$] Designed a high-range wireless transceiver with an impedance-matched PCB for a facade cleaning robot, achieving a line of sight range of 850 meters and reliable communication on high-rise buildings.
     \end{itemize}
-  \item[]  \textbf{Pressure and Orientation Sensing System}
+  \item[]  \textbf{\emph{Pressure and Orientation Sensing System}}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
       \item[$\bullet$] Wrote a fault-tolerant I2C driver for the sensors to detect sensor timeouts and report errors for timely remedial actions in the critical closed-loop control system, ensuring safe and reliable robot operation.
-        % \item[$\bullet$] Developed a two-PCB (rigid +flex) arrangement for orientation and differential pressure sensing, with BMP388 and BNO055 sensors. This was vital for maintaining secure suction and precise orientation on vertical surfaces.
-    \end{itemize}
-  % \item[]  \textbf{Lithium Ion Battery Charger}
+ %        \item[$\bullet$] Developed a two-PCB (rigid +flex) arrangement for orientation and differential pressure sensing, with BMP388 and BNO055 sensors. This was vital for maintaining secure suction and precise orientation on vertical surfaces.
+   \end{itemize}
+
+
+  % \item[]  \textbf{\emph{Lithium Ion Battery Charger}}
   %   \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
   %     \item[$\bullet$] Designed a compact Li-ion battery charger system by integrating a 4-layer PCB with the battery pack, allowing in-device charging without unplugging, while effectively managing thermal constraints. 
   %     \item[$\bullet$] Attained 250W/10A high-power charging using LT3763 IC, enabling a 21Ah battery to charged in 2.5 hours.
   %   \end{itemize}
 
-  \item[]  \textbf{Data-Logging System for Housekeeping}
+
+  \item[]  \textbf{\emph{Data-Logging System for Housekeeping}}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.3em}
       \item[$\bullet$] Interfaced a Winbond W25N NAND-Flash memory with a TMS570 microcontroller via SPI and wrote user-friendly APIs for efficient data storage and retrieval, enhancing data-logging capabilities.
         % \item[$\bullet$] Wrote a Python script for interpreting and processing retrieved data, improving data analysis and usability.
     \end{itemize}
 \end{itemize}
+\vspace{-0.2cm}
 %---------------------------------------------------------------------%
-\resumeSubheading
-{CU Boulder}{Teaching Assistant - Embedded System Design}{January 2024 - Present}
-\vspace{-0.3cm}
-\begin{itemize}[leftmargin=0.3in]\vspace{-0.3em}
-  \item[$\bullet$]Responsible for supporting student learning by helping students debug complex hardware and software issues, conducting code reviews,  administering lab sign-offs and grading assignments.
-\end{itemize}
+% \resumeSubheading
+% {CU Boulder}{Teaching Assistant - Embedded System Design}{January 2024 - December 2024}
+% \vspace{-0.3cm}
+% \begin{itemize}[leftmargin=0.3in]\vspace{-0.3em}
+%   \item[$\bullet$]Responsible for supporting student learning by helping students debug complex hardware and software issues, conducting code reviews,  administering lab sign-offs and grading assignments.
+% \end{itemize}
 \vspace{-0.2cm}
 \resumeSubHeadingListEnd
 %---------------------------------------------------------------------%
-\vspace{-16pt}
+\vspace{-8pt}
 
 \section{Projects}
 \resumeSubHeadingListStart
+\resumeSubheadingP
+{NIOS II Custom Instruction Set \textbar{ } FPGA Design}{}
+\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+  \item[$\bullet$] Implemented custom instructions in Verilog for a NIOS II soft-processor to enhance arithmetic operations.
+  \item[$\bullet$] Evaluated performance by benchmarking execution time and comparing it against standard C implementations.
+\end{itemize}
+\vspace{-0.3cm}
 
 \resumeSubheadingP
-{E-Paper Desk Clock \textbar{ } Bare-Metal Embedded \href{https://github.com/parthkharade/Eink-DeskClock}{\small{\textbar{ }\underline{Link} }}}{November 2023 - December 2023}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+{Audio Filter on FPGA \textbar{ } FPGA Design}{December 2024}
+\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+  \item[$\bullet$] Implemented a FIR filter in Verilog to reduce noise in audio sampled from a microphone.
+  \item[$\bullet$] Designed an state machine based handshaking protocol to implement clock domain crossing between the audio codec and the FIR filter.
+\end{itemize}
+\vspace{-0.3cm}
+
+% \resumeSubheadingP
+% {Driver Assistance System \textbar{ } Real-Time Embedded Systems }{April 2024 - May 2024}
+% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+%   \item[$\bullet$] Prototyped a driver assistance system using RTLinux. Synchronized multiple tasks such as frame capture, lane departure, human detection, running on different cores using cyclic rate monotonic schedulers and semaphores.
+% \end{itemize}
+% \vspace{-0.2cm}
+
+% \resumeSubheadingP
+% {Spotify Dock \textbar{ } Embedded Linux \href{https://github.com/cu-ecen-aeld/final-project-parthkharade/wiki/Project-Overview}{\small{\textbar{ }\underline{Link} }}}{}
+% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+%   \item[$\bullet$] Built a Spotify Dock, a device capable of displaying and controlling live Spotify playback
+%     using bash scripts to interface with the Spotify API. Compiled a custom Buildroot image for RPi.
+% \end{itemize}
+% \vspace{-0.2cm}
+
+\resumeSubheadingP
+{Boulder Bash \textbar{ } Bluetooth Low Energy}{}
+\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+  \item[$\bullet$] Developed 'Boulder Bash', a retro arcade console game using Bluetooth Low Energy (BLE) with custom GATT services for data exchange between a energy-efficient wireless joystick and console with a dot matrix display. 
+\end{itemize}
+\vspace{-0.2cm}
+
+\resumeSubheadingP
+{E-Paper Desk Clock \textbar{ } Bare-Metal Embedded \href{https://github.com/parthkharade/Eink-DeskClock}{\small{\textbar{ }\underline{Link} }}}{}
+\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
   \item[$\bullet$] Built a desk-clock using an E-Paper display. Designed a PCB and wrote low-level peripheral drivers for STM32. 
   \item[$\bullet$] Developed a custom graphics library  to allow the user to render bit mapped text and images on the display.
   % \item[$\bullet$] Implemented the Model-View-Controller design pattern using a state machine to allow the user to interact with the clock. The user could set date and time as well as configure 4 independant alarms.
 \end{itemize}
-\vspace{-0.3cm}
+\vspace{-0.2cm}
 
-\resumeSubheadingP
-{Boulder Bash \textbar{ } IoT Embedded Firmware}{April 2024 - May 2024}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Developed 'Boulder Bash', a retro arcade console game using Bluetooth Low Energy (BLE) with custom GATT services for data exchange between a energy-efficient wireless joystick and console with a dot matrix display. 
-\end{itemize}
-\vspace{-0.3cm}
 
-\resumeSubheadingP
-{NIOS II synthesis on MAX10 FPGA \textbar{ } FPGA Design}{September 2024 - Present}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Designed a NIOS II system using Qsys and synthesized it on a MAX10 FPGA. Understood critical steps in hardware development flow such as timing closure, gate-level simulations and soft IP programming. 
-\end{itemize}
-\vspace{-0.3cm}
 
-\resumeSubheadingP
-{Spotify Dock \textbar{ } Embedded Linux \href{https://github.com/cu-ecen-aeld/final-project-parthkharade/wiki/Project-Overview}{\small{\textbar{ }\underline{Link} }}}{April 2024 - May 2024}
-\begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Built a Spotify Dock, a device capable of displaying and controlling live Spotify playback using bash scripts to interface with the Spotify API. Built a custom Buildroot image and wrote I2C and GPIO drivers for RPi.
-\end{itemize}
-\vspace{-0.3cm}
+
 %
 % \resumeSubheadingP
-% {MIPS Processor \textbar{ } Computer Architecture}{March 2020 - May 2020}
-% \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+% {MIPS Processor \textbar{ } Computer Architecture}{}
+% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
 %   \item[$\bullet$] Designed a 5-stage MIPS pipelined processor in Verilog capable of executing \emph{sub}, \emph{add}, \emph{or}, \emph{and} and \emph{beq} instructions. The pipeline was also able to detect and remedy structural, control and data hazards.
-% \end{itemize}
-\vspace{-0.3cm}
-%
-% \resumeSubheadingP
-% {Electrical Power Subsystem of a Cube-Sat \href{https://github.com/parthkharade/MSP430F5529}{\small{\textbar{ }\underline{Link} }}}{March 2018 - August 2021}
-% \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-%   \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430F5529 microcontroller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.
 % \end{itemize}
 % \vspace{-0.3cm}
 
+
+
+
+\resumeSubheadingP
+{Electrical Power Subsystem of a Cube-Sat \href{https://github.com/parthkharade/MSP430F5529}{\small{\textbar{ }\underline{Link} }}}{}
+\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+  \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430F5529 microcontroller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.
+\end{itemize}
+\vspace{-0.3cm}
+
 % \resumeSubheadingP
 % {Microchip AT89C51RC2 Board bring-up \href{https://drive.google.com/drive/folders/1rbtfpOdMc_ohnfu15VS3bPxNDx-BoWwA?usp=drive_link}{\small{\textbar{ }\underline{Link}}}}{August 2023 - November 2023}
-% \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
 %   \item[$\bullet$] Built an AT89C51RC2 development board from scratch, interfacing various peripherals such as external RAM, LCD, GPIO expander, DAC, and ADC, and enabled in-system programming using a MAX232 IC.
 %   % \item[$\bullet$] Wrote terminal-based, menu-driven, user-interactive programs to allow the user to interact with and configure on-chip as well as off-chip peripherals.
 % \end{itemize}
 % \vspace{-0.3cm}
-
 
 \resumeSubHeadingListEnd
 \end{document}
