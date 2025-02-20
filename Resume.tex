@@ -118,7 +118,7 @@
     \end{itemize}
   \item[]  \textbf{\emph{Pressure and Orientation Sensing System}}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.1em}
-      \item[$\bullet$] Wrote a fault-tolerant I2C driver for the sensors to detect sensor timeouts and report errors for timely remedial actions in the critical closed-loop control system, ensuring safe and reliable robot operation.
+      \item[$\bullet$] Wrote a fault-tolerant I2C driver in C for the sensors to detect timeouts and report errors for timely remedial actions in a critical closed-loop control system, ensuring safe and reliable robot operation.
         % \item[$\bullet$] Collaborated with the mechanical team to develop a novel two-PCB (rigid +flex) arrangement, minimizing vibrational noise for reliable IMU operation.
         % \item[$\bullet$] This design was crucial to meet a tight-deadline in order to get the robot ready for an investor meeting.
    \end{itemize}
@@ -154,6 +154,17 @@
 \resumeSubHeadingListStart
 
 \resumeSubheadingP
+{E-Paper Desk Clock \textbar{ } Bare-Metal Embedded \href{https://github.com/parthkharade/Eink-DeskClock}{\small{\textbar{ }\underline{Link} }}}{}
+\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+  \item[$\bullet$] Built a battery powered desk-clock using an E-Paper display. Wrote low-level peripheral drivers for STM32. 
+  \item[$\bullet$] Developed a custom graphics library to allow the user to render bit-mapped content on the display. Implemented an MVC architecture to enable user interaction to set time and alarms.
+  % \item[$\bullet$] Developed a custom graphics library  to allow the user to render bit mapped text and images on the display.
+  % \item[$\bullet$] Implemented the Model-View-Controller design pattern using a state machine to allow the user to interact with the clock. The user could set date and time as well as configure 4 independent alarms.
+\end{itemize}
+\vspace{-0.2cm}
+
+
+\resumeSubheadingP
 {Audio Filter on FPGA \textbar{ } FPGA Design}{ }
 \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
   \item[$\bullet$] Developed a FIR filter in Verilog to reduce noise in audio signals sampled from a microphone.
@@ -162,25 +173,15 @@
 \end{itemize}
 \vspace{-0.3cm}
 
-\resumeSubheadingP
-{NIOS II Custom Instruction Set \textbar{ } FPGA Design}{}
-\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Implemented custom instructions in Verilog for a NIOS II soft-processor to enhance arithmetic operations.
-  % \item[$\bullet$] Developed firmware for the soft-processor to use the timer module to benchmark execution times against standard C implementations.
-  \item[$\bullet$] Developed C firmware for the NIOS II soft processor to benchmark custom instructions against standard C implementations, validating performance improvements in an FPGA environment.
-\end{itemize}
-\vspace{-0.2cm}
-
-
 % \resumeSubheadingP
-% {E-Paper Desk Clock \textbar{ } Bare-Metal Embedded \href{https://github.com/parthkharade/Eink-DeskClock}{\small{\textbar{ }\underline{Link} }}}{}
+% {NIOS II Custom Instruction Set \textbar{ } FPGA Design}{}
 % \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-%   \item[$\bullet$] Built a battery powered desk-clock using an E-Paper display. Wrote low-level peripheral drivers for STM32. 
-%   \item[$\bullet$] Developed a custom graphics library to allow the user to render bit-mapped content on the display. Implemented an MVC architecture to enable user interaction to set time and alarms.
-%   % \item[$\bullet$] Developed a custom graphics library  to allow the user to render bit mapped text and images on the display.
-%   % \item[$\bullet$] Implemented the Model-View-Controller design pattern using a state machine to allow the user to interact with the clock. The user could set date and time as well as configure 4 independent alarms.
+%   \item[$\bullet$] Implemented custom instructions in Verilog for a NIOS II soft-processor to enhance arithmetic operations.
+%   % \item[$\bullet$] Developed firmware for the soft-processor to use the timer module to benchmark execution times against standard C implementations.
+%   \item[$\bullet$] Developed C firmware for the NIOS II soft processor to benchmark custom instructions against standard C implementations, validating performance improvements in an FPGA environment.
 % \end{itemize}
 % \vspace{-0.2cm}
+%
 
 
 \resumeSubheadingP
@@ -198,14 +199,14 @@
 %   \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430 microcontroller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.
 % \end{itemize}
 % \vspace{-0.2cm}
-
-\resumeSubheadingP
-{Spotify Dock \textbar{ } Embedded Linux \href{https://github.com/cu-ecen-aeld/final-project-parthkharade/wiki/Project-Overview}{\small{\textbar{ }\underline{Link} }}}{}
-\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Built a Spotify Dock, a device capable of displaying and controlling live Spotify playback
-    using bash scripts to interface with the Spotify API. Compiled a custom Buildroot image for RPi.
-\end{itemize}
-\vspace{-0.2cm}
+%
+% \resumeSubheadingP
+% {Spotify Dock \textbar{ } Embedded Linux \href{https://github.com/cu-ecen-aeld/final-project-parthkharade/wiki/Project-Overview}{\small{\textbar{ }\underline{Link} }}}{}
+% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+%   \item[$\bullet$] Built a Spotify Dock, a device capable of displaying and controlling live Spotify playback
+%     using bash scripts to interface with the Spotify API. Compiled a custom Buildroot image for RPi.
+% \end{itemize}
+% \vspace{-0.2cm}
 
 
 
