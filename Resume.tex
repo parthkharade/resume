@@ -82,12 +82,12 @@
 \vspace{-4mm}
 \begin{table}[!htb]
   \begin{tabular} { m{3.1cm} | m{15cm} }
-    {Micro-controllers}   & {\: STM32F4, TI-MSP430, TI-C2000, 8051}                  \\
+    % {Micro-controllers}   & {\: STM32F4, TI-MSP430, TI-C2000, 8051}                  \\
     {Languages}           & {\: C, 8051 Assembly,ARM Assembly, Python, Verilog, VHDL, Bash}  \\
-    {Tools/Software}      & {\: Make, Bazel, Git, GTest, Quartus}     \\
+    {Tools/Software}      & {\: Make, Bazel, Git, Jira, GTest, Quartus, Vivado, Modelsim}     \\
     {Peripherals}         & {\: GPIO, SPI, UART, I2C, ADC, DAC}                 \\
-    % {Hardware}            & {\: Layout and Schematic Capture, Circuit Design, EAGLE, KiCad, LTSpice}                        \\
-    {Debugging}           & {\: Oscilloscopes, Logic Analyser, JTAG}\\
+    {Hardware}            & {\: Layout and Schematic Capture, Circuit Design, EAGLE, KiCad, LTSpice}                        \\
+    {Debugging}           & {\: Oscilloscopes, Logic Analyzer, JTAG}\\
     % {Coursework}          & {\: Embedded System Design, Embedded Linux Design, Real-Time Embedded Systems}                \\
   \end{tabular}
 \end{table}
@@ -112,13 +112,15 @@
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.1em}
       \item[$\bullet$] Developed an SPI driver for the CC2500 transceiver that simplified access to core functionality. Enhanced noise immunity of the system by implementing FHSS and antenna diversity in firmware.
       % \item[$\bullet$] Designed a impedance-matched PCB for CC2500, achieving a line of sight range of 850 meters and reliable communication on high-rise buildings.
-      \item[$\bullet$] Designed a high-range wireless transceiver with an impedance-matched PCB for a facade cleaning robot, achieving a line of sight range of 850 meters and reliable communication on high-rise buildings.
-      \item[$\bullet$] Worked in a cross-functional environment with mechanical and robotics teams to iterate PCB designs and define the software architecture, ensuring seamless integration.
+      % \item[$\bullet$] Designed a high-range wireless transceiver with an impedance-matched PCB for a facade cleaning robot, achieving a line of sight range of 850 meters and reliable communication on high-rise buildings.
+       \item[$\bullet$] Wrote interrupt-driven code and utilized low power modes of the transceiver and the microcontroller to reduce power consumption and extend battery life of the hand-held radio controller.
+      \item[$\bullet$] Worked in a cross-functional environment with mechanical and robotics teams to lead multiple board bring-ups define the software architecture, ensuring seamless integration.
     \end{itemize}
   \item[]  \textbf{\emph{Pressure and Orientation Sensing System}}
     \begin{itemize}\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.1em}
       \item[$\bullet$] Wrote a fault-tolerant I2C driver for the sensors to detect sensor timeouts and report errors for timely remedial actions in the critical closed-loop control system, ensuring safe and reliable robot operation.
-        \item[$\bullet$] Collaborated with the mechanical team to develop a novel two-PCB (rigid +flex) arrangement, minimizing vibrational noise for reliable operation.
+        % \item[$\bullet$] Collaborated with the mechanical team to develop a novel two-PCB (rigid +flex) arrangement, minimizing vibrational noise for reliable IMU operation.
+        % \item[$\bullet$] This design was crucial to meet a tight-deadline in order to get the robot ready for an investor meeting.
    \end{itemize}
 
 
@@ -141,7 +143,7 @@
 {CU Boulder}{Teaching Assistant - Embedded System Design}{Jan 2024 - Dec 2024}
 \vspace{-0.3cm}
 \begin{itemize}[leftmargin=0.3in]\vspace{-0.3em}
-  \item[$\bullet$]Mentored students in debugging hardware and firmware issues. Conducted code reviews and collaborated with professors and peers to improve course structure and evaluations.
+  \item[$\bullet$]Mentored students in board bring-ups and debugging firmware issues. Conducted code reviews and collaborated with professors and peers to improve course structure and evaluations.
 \end{itemize}
 \vspace{-0.2cm}
 \resumeSubHeadingListEnd
@@ -152,14 +154,13 @@
 \resumeSubHeadingListStart
 
 \resumeSubheadingP
-{E-Paper Desk Clock \textbar{ } Bare-Metal Embedded \href{https://github.com/parthkharade/Eink-DeskClock}{\small{\textbar{ }\underline{Link} }}}{}
+{Audio Filter on FPGA \textbar{ } FPGA Design}{ }
 \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Built a battery powered desk-clock using an E-Paper display. Wrote low-level peripheral drivers for STM32. 
-  \item[$\bullet$] Developed a custom graphics library to allow the user to render bit-mapped content on the display. Implemented an MVC architecture to enable user interaction to set time and alarms.
-  % \item[$\bullet$] Developed a custom graphics library  to allow the user to render bit mapped text and images on the display.
-  % \item[$\bullet$] Implemented the Model-View-Controller design pattern using a state machine to allow the user to interact with the clock. The user could set date and time as well as configure 4 independent alarms.
+  \item[$\bullet$] Developed a FIR filter in Verilog to reduce noise in audio signals sampled from a microphone.
+  \item[$\bullet$] Designed and implemented a state-machine-based handshaking protocol to facilitate clock domain crossing between the audio codec and the FIR filter.
+  \item[$\bullet$] Gained hands-on experience with key aspects of FPGA development, including timing closure, gate-level simulations, and soft-IP programming.
 \end{itemize}
-\vspace{-0.2cm}
+\vspace{-0.3cm}
 
 \resumeSubheadingP
 {NIOS II Custom Instruction Set \textbar{ } FPGA Design}{}
@@ -170,13 +171,17 @@
 \end{itemize}
 \vspace{-0.2cm}
 
-\resumeSubheadingP
-{Audio Filter on FPGA \textbar{ } FPGA Design}{ }
-\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Implemented a FIR filter in Verilog to reduce noise in audio sampled from a microphone.
-  \item[$\bullet$] Designed a state machine based handshaking protocol to implement clock domain crossing between the audio codec and the FIR filter.
-\end{itemize}
-\vspace{-0.3cm}
+
+% \resumeSubheadingP
+% {E-Paper Desk Clock \textbar{ } Bare-Metal Embedded \href{https://github.com/parthkharade/Eink-DeskClock}{\small{\textbar{ }\underline{Link} }}}{}
+% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+%   \item[$\bullet$] Built a battery powered desk-clock using an E-Paper display. Wrote low-level peripheral drivers for STM32. 
+%   \item[$\bullet$] Developed a custom graphics library to allow the user to render bit-mapped content on the display. Implemented an MVC architecture to enable user interaction to set time and alarms.
+%   % \item[$\bullet$] Developed a custom graphics library  to allow the user to render bit mapped text and images on the display.
+%   % \item[$\bullet$] Implemented the Model-View-Controller design pattern using a state machine to allow the user to interact with the clock. The user could set date and time as well as configure 4 independent alarms.
+% \end{itemize}
+% \vspace{-0.2cm}
+
 
 \resumeSubheadingP
 {Driver Assistance System \textbar{ } Real-Time Embedded Systems }{}
@@ -194,13 +199,13 @@
 % \end{itemize}
 % \vspace{-0.2cm}
 
-% \resumeSubheadingP
-% {Spotify Dock \textbar{ } Embedded Linux \href{https://github.com/cu-ecen-aeld/final-project-parthkharade/wiki/Project-Overview}{\small{\textbar{ }\underline{Link} }}}{}
-% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-%   \item[$\bullet$] Built a Spotify Dock, a device capable of displaying and controlling live Spotify playback
-%     using bash scripts to interface with the Spotify API. Compiled a custom Buildroot image for RPi.
-% \end{itemize}
-% \vspace{-0.2cm}
+\resumeSubheadingP
+{Spotify Dock \textbar{ } Embedded Linux \href{https://github.com/cu-ecen-aeld/final-project-parthkharade/wiki/Project-Overview}{\small{\textbar{ }\underline{Link} }}}{}
+\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+  \item[$\bullet$] Built a Spotify Dock, a device capable of displaying and controlling live Spotify playback
+    using bash scripts to interface with the Spotify API. Compiled a custom Buildroot image for RPi.
+\end{itemize}
+\vspace{-0.2cm}
 
 
 
