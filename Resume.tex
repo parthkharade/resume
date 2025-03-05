@@ -65,44 +65,24 @@
 \end{center}
 
 
-%-----------EDUCATION-----------
 
-\section {Education}
-\resumeSubHeadingListStart
-\resumeSubheadingEdu
-{University of Colorado Boulder}{May 2025}
-{Master's in Embedded Systems Engineering}{3.8/4.0}
-\vspace{-0.1in}
-\resumeSubheadingEdu
-{Birla Institute of Technology and Science, Pilani}{May 2021}
-{Bachelor's in Electrical and Electronics Engineering}{7.9/10.0}
-\resumeSubHeadingListEnd
-\vspace{-16pt}
 \section{Skills and Coursework}
 \vspace{-4mm}
 \begin{table}[!htb]
   \begin{tabular} { m{3.1cm} | m{15cm} }
     % {Micro-controllers}   & {\: STM32F4, TI-MSP430, TI-C2000, 8051}                  \\
-    {Languages}           & {\: C, Verilog, Python, Bash, 8051 Assembly, ARM Assembly}  \\
-    {Tools}               & {\: Make, Bazel, Git, GTest, Quartus, Vivado}     \\
-    {Peripherals}         & {\: GPIO, SPI, UART, I2C, ADC, DAC, DMA, TImers, NVIC}                 \\
-    {Hardware}            & {\: PCB Schematic and Layout, Circuit Design, RTL Design, EAGLE, KiCad, LTSpice}                        \\
-    {Debugging}           & {\: Oscilloscopes, Logic Analyzer, JTAG, ICE}\\
-    % {Coursework}          & {\: Princinples of Embedded Software, Real-Time Embedded Systems, Digital Control Systems}                \\
+    {Languages}           & {\: C, Python, Verilog, Bash, 8051 Assembly, ARM Assembly}  \\
+    {Software}            & {\: Make, Bazel, Git, FreeRTOS, RTLinux, Cheddar}     \\
+    {Peripherals}         & {\: GPIO, SPI, UART, I2C, ADC, DAC, DMA, Timers}                 \\
+    {Hardware}            & {\: PCB Schematic and Layout, Circuit Design, RTL Design, EAGLE}\\
+    {Debugging}           & {\: Oscilloscopes, Logic Analyzer, JTAG}\\
+    {Coursework}          & {\: Principles of Embedded Software, Real-Time Embedded Systems}                \\
   \end{tabular}
 \end{table}
 \vspace{-16pt}
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
-\resumeSubheading
-{Carbon3D}{Software Engineering Intern}{May 2024 - Aug 2024}
-\vspace{-0.3cm}
-\begin{itemize}[leftmargin=0.3in]\vspace{-0.3em}\setlength{\itemsep}{0pt}
-  \item[$\bullet$]Optimized internal state machines for Carbon3D printers by developing rigorous GTest test cases and improving application code, eliminating unintended state transitions and improving system stability.
-  \item[$\bullet$] Built a firmware update manager in Python to provide a consistent interface for managing printer firmware. 
-\end{itemize}
-\vspace{-0.2cm}
 %---------------------------------------------------------------------%
 \resumeSubheading
 {WCB Robotics Pvt Ltd}{Design Engineer}{Jul 2021 - May 2023}
@@ -119,6 +99,15 @@
 \vspace{-0.2cm}
 %---------------------------------------------------------------------%
 \resumeSubheading
+{Carbon3D}{Software Engineering Intern}{May 2024 - Aug 2024}
+\vspace{-0.3cm}
+\begin{itemize}[leftmargin=0.3in]\vspace{-0.3em}\setlength{\itemsep}{0pt}
+  \item[$\bullet$]Optimized internal state machines for Carbon3D printers by developing rigorous GTest test cases and improving application code, eliminating unintended state transitions and improving system stability.
+  \item[$\bullet$] Built a firmware update manager in Python to provide a consistent interface for managing printer firmware. 
+\end{itemize}
+\vspace{-0.2cm}
+%---------------------------------------------------------------------%
+\resumeSubheading
 {CU Boulder}{Teaching Assistant - Embedded System Design}{Jan 2024 - Dec 2024}
 \vspace{-0.3cm}
 \begin{itemize}[leftmargin=0.3in]\vspace{-0.3em}
@@ -127,8 +116,6 @@
 \vspace{-0.2cm}
 \resumeSubHeadingListEnd
 %---------------------------------------------------------------------%
-\vspace{-14pt}
-
 \section{Projects}
 \resumeSubHeadingListStart
 
@@ -142,37 +129,37 @@
 \end{itemize}
 \vspace{-0.2cm}
 
-
-\resumeSubheadingP
-{Audio Filter on FPGA \textbar{ } FPGA Design}{ }
-\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Developed a FIR filter in Verilog to reduce noise in audio signals sampled from a microphone.
-  \item[$\bullet$] Designed and implemented a state-machine-based handshaking protocol to facilitate clock domain crossing between the audio codec and the FIR filter.
-  % \item[$\bullet$] Gained hands-on experience with key aspects of FPGA development, including timing closure, gate-level simulations, and soft-IP programming.
-\end{itemize}
-\vspace{-0.3cm}
-
-\resumeSubheadingP
-{NIOS II Custom Instruction Set \textbar{ } FPGA Design}{}
-\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Implemented custom instructions in Verilog for a NIOS II soft-processor to enhance arithmetic operations.
-  \item[$\bullet$] Developed C firmware to benchmark custom instructions against standard C implementations, validating performance improvements in an FPGA environment.
-\end{itemize}
-\vspace{-0.2cm}
+%
+% \resumeSubheadingP
+% {Audio Filter on FPGA \textbar{ } FPGA Design}{ }
+% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+%   \item[$\bullet$] Developed a FIR filter in Verilog to reduce noise in audio signals sampled from a microphone.
+%   \item[$\bullet$] Designed and implemented a state-machine-based handshaking protocol to facilitate clock domain crossing between the audio codec and the FIR filter.
+%   % \item[$\bullet$] Gained hands-on experience with key aspects of FPGA development, including timing closure, gate-level simulations, and soft-IP programming.
+% \end{itemize}
+% \vspace{-0.3cm}
+%
+% \resumeSubheadingP
+% {NIOS II Custom Instruction Set \textbar{ } FPGA Design}{}
+% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+%   \item[$\bullet$] Implemented custom instructions in Verilog for a NIOS II soft-processor to enhance arithmetic operations.
+%   \item[$\bullet$] Developed C firmware to benchmark custom instructions against standard C implementations, validating performance improvements in an FPGA environment.
+% \end{itemize}
+% \vspace{-0.2cm}
 
 \resumeSubheadingP
 {Driver Assistance System \textbar{ } Real-Time Embedded Systems }{}
 \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
   \item[$\bullet$] Developed a real-time driver assistance system using RTLinux, using rate-monotonic multi-core scheduling for synchronized frame capture and lane departure detection, improving system response time.
-  % \item[$\bullet$] Prototyped a driver assistance system using RTLinux. Synchronized multiple tasks such as frame capture, lane departure, human detection, running on multiple cores using cyclic rate monotonic schedulers and semaphores.
+  \item[$\bullet$] Analysed system feasibility using Cheddar, implemented thread management using pThreads and ensured image frame data coherency using mutexes. 
+  \item[$\bullet$] Achieved a worst case response time of 707 ms for lane departure detection and 481 ms for human detection. 
 \end{itemize}
 \vspace{-0.2cm}
-
+%
 % \resumeSubheadingP
 % {Spotify Dock \textbar{ } Embedded Linux \href{https://github.com/cu-ecen-aeld/final-project-parthkharade/wiki/Project-Overview}{\small{\textbar{ }\underline{Link} }}}{}
 % \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-%   \item[$\bullet$] Built a Spotify Dock, a device capable of displaying and controlling live Spotify playback
-%     using bash scripts to interface with the Spotify API. Compiled a custom Buildroot image for RPi.
+%   \item[$\bullet$] Built a Spotify Dock, a device capable of displaying and controlling live Spotify playback using bash scripts to interface with the Spotify API. Compiled a custom Buildroot image for RPi.
 % \end{itemize}
 % \vspace{-0.2cm}
 
@@ -190,22 +177,37 @@
 %   \item[$\bullet$] Developed 'Boulder Bash', a retro arcade console game using Bluetooth Low Energy (BLE) with custom GATT services for data exchange between a energy-efficient wireless joystick and console with a dot matrix display. 
 % \end{itemize}
 % \vspace{-0.3cm}
-%
-% \resumeSubheadingP
-% % {Electrical Power Subsystem of a Cube-Sat \href{https://github.com/parthkharade/MSP430F5529}{\small{\textbar{ }\underline{Link} }}}{}
-% {Electrical Power Subsystem of a Cube-Sat \textbar{} Bare-Metal Embedded}{}
-% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-%   \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430 microcontroller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.
-% \end{itemize}
-% \vspace{-0.2cm}
+% %
+\resumeSubheadingP
+% {Electrical Power Subsystem of a Cube-Sat \href{https://github.com/parthkharade/MSP430F5529}{\small{\textbar{ }\underline{Link} }}}{}
+{Electrical Power Subsystem of a Cube-Sat \textbar{} Bare-Metal Embedded}{}
+\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+  \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430 microcontroller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.
+\end{itemize}
+\vspace{-0.2cm}
 %
 %
 % \resumeSubheadingP
 % {Microchip AT89C51RC2 Board bring-up \textbar{ } Bare-Metal Embedded \href{https://drive.google.com/drive/folders/1rbtfpOdMc_ohnfu15VS3bPxNDx-BoWwA?usp=drive_link}{\small{\textbar{ }\underline{Link}}}}{}
 % \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-%   \item[$\bullet$] Built an AT89C51RC2 development board from scratch, interfacing various peripherals such as external RAM, LCD, GPIO expander, DAC, and ADC, and enabled in-system programming using a MAX232 IC.
+%   \item[$\bullet$] Built an AT89C51RC2 development board from scratch, interfacing various peripherals such as external RAM, LCD, IO expander, DAC, and ADC, and enabled in-system programming using a MAX232 IC.
 % \end{itemize}
 % \vspace{-0.3cm}
 
 \resumeSubHeadingListEnd
+\vspace{-14pt}
+%-----------EDUCATION-----------
+\section {Education}
+\resumeSubHeadingListStart
+\resumeSubheadingEdu
+{University of Colorado Boulder}{May 2025}
+{Master's in Embedded Systems Engineering}{3.8/4.0}
+\vspace{-0.1in}
+\resumeSubheadingEdu
+{Birla Institute of Technology and Science, Pilani}{May 2021}
+{Bachelor's in Electrical and Electronics Engineering}{7.9/10.0}
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
 \end{document}
