@@ -65,18 +65,31 @@
 \end{center}
 
 
+%-----------EDUCATION-----------
+\
+\section {Education}
+\resumeSubHeadingListStart
+\resumeSubheadingEdu
+{University of Colorado Boulder}{May 2025}
+{Master's in Embedded Systems Engineering}{3.8/4.0}
+\vspace{-0.1in}
+\resumeSubheadingEdu
+{Birla Institute of Technology and Science, Pilani}{May 2021}
+{Bachelor's in Electrical and Electronics Engineering}{7.9/10.0}
+\resumeSubHeadingListEnd
 
-\section{Skills and Coursework}
+% SKILlS
+\section{Skills}
 \vspace{-4mm}
 \begin{table}[!htb]
   \begin{tabular} { m{3.1cm} | m{15cm} }
-    % {Micro-controllers}   & {\: STM32F4, TI-MSP430, TI-C2000, 8051}                  \\
-    {Languages}           & {\: C, Python, Verilog, Bash, 8051 Assembly, ARM Assembly}  \\
-    {Software}            & {\: Make, Bazel, Git, FreeRTOS, RTLinux, Cheddar}     \\
-    {Peripherals}         & {\: GPIO, SPI, UART, I2C, ADC, DAC, DMA, Timers}                 \\
-    {Hardware}            & {\: PCB Schematic and Layout, Circuit Design, RTL Design, EAGLE}\\
+    {Micro-controllers}   & {\: STM32F4(Arm Cortex-M4), TI-MSP430, TI-C2000, 8051}                  \\
+    {Languages}           & {\: C, Python, 8051 Assembly, ARM Assembly}  \\
     {Debugging}           & {\: Oscilloscopes, Logic Analyzer, JTAG}\\
-    {Coursework}          & {\: Principles of Embedded Software, Real-Time Embedded Systems}                \\
+    {Software \& Tools}   & {\: gcc, make, Git, RTLinux, FreeRTOS}     \\
+    {Peripherals}         & {\: GPIO, SPI, UART, I2C, ADC, DAC, DMA, Timers, }                 \\
+    % {Hardware}            & {\: PCB Schematic and Layout, Circuit Design, EAGLE}\\
+    {Coursework}          & {\: Real-time Embedded Systems, Principles of Embedded Software}\\
   \end{tabular}
 \end{table}
 \vspace{-16pt}
@@ -86,13 +99,14 @@
 %---------------------------------------------------------------------%
 \resumeSubheading
 {WCB Robotics Pvt Ltd}{Design Engineer}{Jul 2021 - May 2023}
-\vspace{-0.4cm}
+\vspace{-0.3cm}
   \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.1em}
- \item[$\bullet$] Developed firmware and hardware for a facade-cleaning robot, leading board bring-ups and collaborating with mechanical and robotics teams to iterate through PCB designs and firmware architecture.  
-    \item[$\bullet$] Designed a modular SPI driver in C for the CC2500 transceiver, implementing FHSS and antenna diversity to enhance noise immunity and ensure reliable long-range communication up to 1000 meters.  
+    \item[$\bullet$] Developed firmware and hardware for a facade-cleaning robot, leading board bring-ups and collaborating with mechanical and robotics teams to iterate through PCB designs and firmware architecture.  
+    \item[$\bullet$] Designed a modular SPI driver in C for the CC2500 RF transceiver, implementing FHSS and antenna diversity to enhance noise immunity and ensure reliable long-range communication up to 1000 meters.  
+    \item[$\bullet$] Wrote structured application code in C to handle various states of the transceiver system, such as advertising, channel synchronisation and packet processing.
     \item[$\bullet$] Wrote register-level, interrupt-driven firmware and utilized low-power modes of the transceiver and microcontroller which extended the battery life of the controller by 30 minutes.  
     \item[$\bullet$] Developed a unique differential-pressure sensing system using BMP380 pressure sensors, which was critical in generating the suction required to keep the robot securely attached to vertical surfaces.  
-    \item[$\bullet$] Wrote I2C drivers and developed robust firmware for sensor data acquisition, implementing timeout detection and recovery mechanisms to ensure safe and reliable operation of the closed-loop pressure control system.  
+    \item[$\bullet$] Wrote I2C drivers and developed firmware for the pressure senseor, implementing timeout detection and recovery mechanisms to ensure safe and reliable operation of the closed-loop pressure control system.  
     % \item[$\bullet$] Designed a housekeeping system for logging and retrieving critical system parameters by interfacing a NAND flash using a bare-metal SPI driver, enabling reliable storage for debugging and fault analysis.
   \end{itemize}
 
@@ -107,27 +121,16 @@
 \end{itemize}
 \vspace{-0.2cm}
 %---------------------------------------------------------------------%
-\resumeSubheading
-{CU Boulder}{Teaching Assistant - Embedded System Design}{Jan 2024 - Dec 2024}
-\vspace{-0.3cm}
-\begin{itemize}[leftmargin=0.3in]\vspace{-0.3em}
-  \item[$\bullet$]Mentored students in board bring-ups and debugging firmware issues. Conducted code reviews and collaborated with professors and peers to improve course structure and evaluations.
-\end{itemize}
-\vspace{-0.2cm}
+% \resumeSubheading
+% {CU Boulder}{Teaching Assistant - Embedded System Design}{Jan 2024 - Dec 2024}
+% \vspace{-0.3cm}
+% \begin{itemize}[leftmargin=0.3in]\vspace{-0.3em}
+%   \item[$\bullet$]Mentored students in board bring-ups and debugging firmware issues. Conducted code reviews and collaborated with professors and peers to improve course structure and evaluations.
+% \end{itemize}
 \resumeSubHeadingListEnd
 %---------------------------------------------------------------------%
 \section{Projects}
 \resumeSubHeadingListStart
-
-\resumeSubheadingP
-{E-Paper Desk Clock \textbar{ } Bare-Metal Embedded \href{https://github.com/parthkharade/Eink-DeskClock}{\small{\textbar{ }\underline{Link} }}}{}
-\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Built a rechargeable battery powered desk-clock using an E-Paper display and wrote low-level, interrupt-based peripheral drivers for STM32. 
-  \item[$\bullet$] Developed a custom graphics library to allow the user to render bit-mapped content on the display and implemented an MVC architecture to enable user interaction to set time and alarms.
-  % \item[$\bullet$] Developed a custom graphics library  to allow the user to render bit mapped text and images on the display.
-  % \item[$\bullet$] Implemented the Model-View-Controller design pattern using a state machine to allow the user to interact with the clock. The user could set date and time as well as configure 4 independent alarms.
-\end{itemize}
-\vspace{-0.2cm}
 
 %
 % \resumeSubheadingP
@@ -148,13 +151,25 @@
 % \vspace{-0.2cm}
 
 \resumeSubheadingP
+{E-Paper Desk Clock \textbar{ } Bare-Metal Embedded \href{https://github.com/parthkharade/Eink-DeskClock}{\small{\textbar{ }\underline{Link} }}}{}
+\begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+  \item[$\bullet$] Built a rechargeable battery powered desk-clock using an E-Paper display and wrote low-level, interrupt-based peripheral drivers for STM32. 
+  \item[$\bullet$] Developed a custom graphics library to allow the user to render bit-mapped content on the display and implemented an MVC architecture to enable user interaction to set time and alarms.
+  % \item[$\bullet$] Developed a custom graphics library  to allow the user to render bit mapped text and images on the display.
+  % \item[$\bullet$] Implemented the Model-View-Controller design pattern using a state machine to allow the user to interact with the clock. The user could set date and time as well as configure 4 independent alarms.
+\end{itemize}
+\vspace{-0.2cm}
+
+\resumeSubheadingP
 {Driver Assistance System \textbar{ } Real-Time Embedded Systems }{}
 \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
   \item[$\bullet$] Developed a real-time driver assistance system using RTLinux, using rate-monotonic multi-core scheduling for synchronized frame capture and lane departure detection, improving system response time.
   \item[$\bullet$] Analysed system feasibility using Cheddar, implemented thread management using pThreads and ensured image frame data coherency using mutexes. 
-  \item[$\bullet$] Achieved a worst case response time of 707 ms for lane departure detection and 481 ms for human detection. 
+  % \item[$\bullet$] Achieved a worst case response time of 707 ms for lane departure detection and 481 ms for human detection. 
 \end{itemize}
 \vspace{-0.2cm}
+
+
 %
 % \resumeSubheadingP
 % {Spotify Dock \textbar{ } Embedded Linux \href{https://github.com/cu-ecen-aeld/final-project-parthkharade/wiki/Project-Overview}{\small{\textbar{ }\underline{Link} }}}{}
@@ -171,20 +186,20 @@
 % \end{itemize}
 % \vspace{-0.3cm}
 
-% \resumeSubheadingP
-% {Boulder Bash \textbar{ } Bluetooth Low Energy}{}
-% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-%   \item[$\bullet$] Developed 'Boulder Bash', a retro arcade console game using Bluetooth Low Energy (BLE) with custom GATT services for data exchange between a energy-efficient wireless joystick and console with a dot matrix display. 
-% \end{itemize}
-% \vspace{-0.3cm}
-% %
 \resumeSubheadingP
-% {Electrical Power Subsystem of a Cube-Sat \href{https://github.com/parthkharade/MSP430F5529}{\small{\textbar{ }\underline{Link} }}}{}
-{Electrical Power Subsystem of a Cube-Sat \textbar{} Bare-Metal Embedded}{}
+{Retro Arcade Game \textbar{ } Bluetooth Low Energy}{}
 \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
-  \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430 microcontroller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.
+  \item[$\bullet$] Developed 'Boulder Bash', a retro arcade console game using Bluetooth Low Energy (BLE) and custom GATT services for data exchange between a energy-efficient wireless joystick and console with a dot matrix display. 
 \end{itemize}
-\vspace{-0.2cm}
+\vspace{-0.3cm}
+% %
+% \resumeSubheadingP
+% % {Electrical Power Subsystem of a Cube-Sat \href{https://github.com/parthkharade/MSP430F5529}{\small{\textbar{ }\underline{Link} }}}{}
+% {Electrical Power Subsystem of a Cube-Sat \textbar{} Bare-Metal Embedded}{}
+% \begin{itemize}[leftmargin=0.3in]\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}\vspace{-0.2cm}
+%   \item[$\bullet$] Wrote I2C drivers for interfacing INA219 Power Monitor with the MSP430 microcontroller to implement Maximum Power Point Tracking using the Perturb and Observe algorithm.
+% \end{itemize}
+% \vspace{-0.2cm}
 %
 %
 % \resumeSubheadingP
@@ -196,18 +211,8 @@
 
 \resumeSubHeadingListEnd
 \vspace{-14pt}
-%-----------EDUCATION-----------
-\section {Education}
-\resumeSubHeadingListStart
-\resumeSubheadingEdu
-{University of Colorado Boulder}{May 2025}
-{Master's in Embedded Systems Engineering}{3.8/4.0}
-\vspace{-0.1in}
-\resumeSubheadingEdu
-{Birla Institute of Technology and Science, Pilani}{May 2021}
-{Bachelor's in Electrical and Electronics Engineering}{7.9/10.0}
-\resumeSubHeadingListEnd
-\vspace{-16pt}
+
+
 
 
 \end{document}
